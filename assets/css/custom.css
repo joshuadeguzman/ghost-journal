@@ -1,0 +1,30 @@
+.gh-toc {
+	margin-top: 4vmin; /* Aligns the TOC with the beginning of content */
+}
+
+@media (min-width: 1300px) {
+	.gh-toc {
+		position: sticky; /* On larger screens, TOC will stay in the same spot on the page */
+		top: 4vmin;
+		grid-column: wide-start / main-start; /* Place the TOC to the left of the content */
+	}
+}
+
+.gh-toc > .toc-list {
+	position: relative;
+	overflow: hidden;
+}
+
+.toc-list {
+	list-style: none;
+}
+
+.gh-toc .toc-list-item a {
+	color: var(--ghost-accent-color);
+	text-decoration: none;
+}
+
+.gh-toc .is-active-link {
+	background-color: rgba(102,205,170, 0.10);
+	font-weight: bold;
+}
